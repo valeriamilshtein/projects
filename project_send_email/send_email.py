@@ -8,7 +8,7 @@ gmail_account = {
 }
 
 sent_from = gmail_account['user']
-recipients = gmail_account['recipients']
+to = gmail_account['recipients']
 subject = 'Super Important Message'
 body = '''
 Hey, I did it!!!
@@ -21,13 +21,13 @@ To: %s
 Subject: %s
 
 %s
-''' % (sent_from, ', '.join(recipients), subject, body)
+''' % (sent_from, ', '.join(to), subject, body)
 
 try:
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
     server.login(gmail_account['user'], gmail_account['password'])
-    server.sendmail(sent_from, recipients, email_text)
+    server.sendmail(sent_from, to, email_text)
     server.close()
 
     print('Email sent!')  # If success
