@@ -4,10 +4,10 @@ It is used to fetch URLs (Uniform Resource Locators).
 It uses the urlopen function and is able to fetch URLs using a variety of different protocols.
 
 Urllib is a package that collects several modules for working with URLs, such as:
-* urllib.request for opening and reading.
+* urllib.request for opening and reading
 * urllib.robotparser for parsing robot.txt files
 * urllib.parse for parsing URLs
-* urllib.error for the exceptions raised
+* urllib.error for the exceptions raised.
 
 Install 'pip install urllib' in Terminal.
 '''
