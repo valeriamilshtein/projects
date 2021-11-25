@@ -1,5 +1,5 @@
 import smtplib  # Handles different parts of the protocol: connecting, authenticating, validation, sending emails.
-from datetime import datetime  # Supplies classes for manipulating dates and times.
+from datetime import datetime  # Supplies classes for manipulating dates and times
 
 gmail_account = {
     'user': 'valeriiapidpala@gmail.com',
