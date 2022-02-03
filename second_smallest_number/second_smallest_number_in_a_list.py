@@ -3,7 +3,7 @@ Given a list of numbers, return the second smallest number.
 '''
 
 # Solution #1
-# Python program to find largest, smallest, second largest, and second smallest elements
+# Python program to find largest, smallest, second largest and second smallest elements
 def second_smallest(list):
     length = len(list)
     list.sort()
